@@ -1,0 +1,11 @@
+#venv foler
+env/
+
+#IDE
+.vscode/
+
+#csv files
+*.csv
+
+#cookies
+*.json
