@@ -45,7 +45,7 @@ async def get_tweet(client, QUERY, tweet_type, maximum):
 
 if __name__ == '__main__':
     config = configparser.ConfigParser()
-    config.read('config.ini')
+    config.read('Config.ini')
 
     USERNAME = config['Configuration']['username']
     EMAIL = config['Configuration']['email']
