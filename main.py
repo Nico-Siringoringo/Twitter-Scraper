@@ -54,7 +54,7 @@ if __name__ == '__main__':
     TYPE = config['Configuration']['type_of_tweets']
     LIMIT = int(config['Configuration']['limit'])
     
-    client = Client('en-US')
+    client = Client()
     
     if os.path.exists('cookies.json'):
         client.load_cookies('cookies.json')
