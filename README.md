@@ -2,7 +2,7 @@
 # Twitter Scraper
 
 ## Description
-The **Twitter Scraper** is a Python application that allows users to scrape data from Twitter efficiently. This project utilizes the **Twikit** library to build an interactive interface for specifying search parameters and viewing results seamlessly. 
+The **Twitter Scraper** is a Python application that allows users to scrape data from Twitter efficiently without API and no limit.
 
 > **Acknowledgments** :
 I extend my heartfelt gratitude to the creators and maintainers of **Twikit** for making this project possible.
