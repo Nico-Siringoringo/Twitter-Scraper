@@ -12,7 +12,6 @@ You can find the Twikit library and its source code on GitHub: [Twikit](https://
 ## Features
 - Scrape tweets based on keywords or hashtags.
 - Export scraped data to CSV.
----
 
 ## Installation
 Install all the requirements
