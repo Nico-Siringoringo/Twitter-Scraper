@@ -10,4 +10,5 @@ env/
 #cookies
 *.json
 
-*.ini
+#config files
+Config.ini

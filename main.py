@@ -66,7 +66,7 @@ if __name__ == '__main__':
     else :
         with open('tweets.csv', 'w', newline='',encoding='utf-8') as file:
             writer = csv.writer(file)
-            writer.writerow(['id', 'username', 'screen_name' 'text', 'created_at_datetime', 'reply_count', 'favorite_count',
+            writer.writerow(['id', 'username', 'screen_name', 'text', 'created_at_datetime', 'reply_count', 'favorite_count',
                           'view_count', 'quote_count', 'retweet_count', 'in_reply_to', 'quote', 'retweeted_tweet', 'replies', 'related_tweets', 'hashtags'])
             
         asyncio.run(get_tweet(client, QUERY, TYPE, LIMIT))
