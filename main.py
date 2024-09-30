@@ -35,7 +35,7 @@ async def get_tweet(client, QUERY, tweet_type, maximum):
         
         for t in tweet:
             tweet_count += 1
-            tweet_data = [t.id, t.user.name, t.text, t.created_at_datetime, t.reply_count, t.favorite_count,
+            tweet_data = [t.id, t.user.name, t.user.screen_name, t.text, t.created_at_datetime, t.reply_count, t.favorite_count,
                           t.view_count, t.quote_count, t.retweet_count, t.reply_to, t.quote, t.retweeted_tweet, t.replies, t.related_tweets, t.hashtags]
             
             with open('tweets.csv', 'a', newline='', encoding='utf-8') as file:
@@ -66,7 +66,7 @@ if __name__ == '__main__':
     else :
         with open('tweets.csv', 'w', newline='',encoding='utf-8') as file:
             writer = csv.writer(file)
-            writer.writerow(['id', 'username', 'text', 'created_at_datetime', 'reply_count', 'favorite_count',
+            writer.writerow(['id', 'username', 'screen_name' 'text', 'created_at_datetime', 'reply_count', 'favorite_count',
                           'view_count', 'quote_count', 'retweet_count', 'in_reply_to', 'quote', 'retweeted_tweet', 'replies', 'related_tweets', 'hashtags'])
             
         asyncio.run(get_tweet(client, QUERY, TYPE, LIMIT))
